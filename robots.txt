@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
-
+Disallow: /README.md/
 Sitemap: https://devtarak.github.io/sitemap.xml
