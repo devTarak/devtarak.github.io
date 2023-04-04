@@ -51,6 +51,8 @@
     <div style="display: none">
         <img src="img/img-mobile.jpg" alt="Futured image">
     </div>
+    <div class="cursor"></div>
+  <div class="cursor2"></div>
 <!-- Live Style Switcher Starts - demo only -->
 <div id="switcher" class="">
     <div class="content-switcher">
@@ -182,5 +184,12 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
 
+<script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
 </body>
 </html>
