@@ -1774,6 +1774,7 @@ body.light hr.separator {
     margin-top: 35px !important;
   }
 }
+/* Cursor css */
 .cursor{
   position: fixed;
   width: 50px;
@@ -1785,8 +1786,8 @@ body.light hr.separator {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: .1s;
+  z-index: 112;
 }
-/* Cursor css */
 .cursor2{
   position: fixed;
   width: 8px;
@@ -1798,4 +1799,5 @@ body.light hr.separator {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: .15s;
+  z-index: 112;
 }
