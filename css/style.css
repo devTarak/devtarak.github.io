@@ -1841,7 +1841,7 @@ body.light hr.separator {
   display: block;
   width: 60px;
   height: 60px;
-  background: #FFB400;
+  background: #FFF;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
