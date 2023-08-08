@@ -1801,3 +1801,59 @@ body.light hr.separator {
   transition: .15s;
   z-index: 112;
 }
+
+/* Remove border and outline on focus */
+#Github1 .gitico:focus {
+  border: none;
+  outline: none;
+}
+
+/* WhatsApp button styling */
+#Github1 .gitico {
+  position: fixed;
+  transition: all .5s ease;
+  background: #fcfcfc;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  border-left: none; /* Change to border-left */
+  color: #070707;
+  font-weight: 700;
+  font-size: 28px;
+  bottom: 10%;
+  right: 2%; /* Change to right */
+  border: 0;
+  z-index: 10001;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+}
+
+/* Create a pulse animation for the button */
+#Github1 .gitico:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -5px; /* Adjust the position */
+  top: -10%;
+  transform: translateX(-50%) translateY(-50%); /* Simplify the translation */
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+/* Define the pulse animation */
+@keyframes pulse-border {
+  0% {
+      transform: translateZ(0) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translateZ(0) scale(1.5);
+      opacity: 0;
+  }
+}
