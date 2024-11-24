@@ -576,6 +576,10 @@ body.light hr.separator {
   padding-left: 70px;
 }
 
+.DesignationHome{
+	font-size:42px;
+}
+
 .home .home-details h1:before {
   content: '';
   position: absolute;
