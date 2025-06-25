@@ -1849,6 +1849,12 @@ body.light hr.separator {
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
 }
+/* Example: Only hide header when slideshow is open */
+.slideshow-open .header {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+}
 
 /* Define the pulse animation */
 @keyframes pulse-border {

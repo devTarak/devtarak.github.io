@@ -305,6 +305,14 @@
 				self.slideshowItems.forEach( function( item ) { setTransform( item, '' ); } );
 
 				self.isSlideshowVisible = false;
+
+				// Ensure header is visible after closing slideshow
+				var header = document.querySelector('.header');
+				if (header) {
+					header.style.visibility = 'visible';
+					header.style.opacity = '1';
+					header.style.zIndex = '';
+				}
 			};
 
 		if( support.transitions ) {
