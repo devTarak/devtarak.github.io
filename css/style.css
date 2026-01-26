@@ -730,6 +730,7 @@ body.light hr.separator {
   margin: 0;
   color: #eee;
   font-size: 14px;
+  text-align: justify;
 }
 
 .about .resume-box .place {
@@ -1867,3 +1868,4 @@ body.light hr.separator {
       opacity: 0;
   }
 }
+
